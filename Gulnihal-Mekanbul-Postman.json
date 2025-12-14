@@ -1,0 +1,136 @@
+{
+	"info": {
+		"_postman_id": "087935a0-ee8c-42d4-9bcf-ec1bb48484dd",
+		"name": "GÜLNİHAL MEKANBUL API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "50524856",
+		"_collection_link": "https://gk247011111-1872357.postman.co/workspace/G%C3%9Clnihal-K%C3%96se's-Workspace~68ee2896-5dad-4c7e-83b7-5fb51de2f5c5/collection/50524856-087935a0-ee8c-42d4-9bcf-ec1bb48484dd?action=share&source=collection_link&creator=50524856"
+	},
+	"item": [
+		{
+			"name": "GET All Venues",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://backend-main-one-vert.vercel.app/api/venues",
+					"protocol": "https",
+					"host": [
+						"backend-main-one-vert",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"api",
+						"venues"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Create Venue",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Postman Cafe\",\r\n  \"address\": \"Ankara\",\r\n  \"foodanddrink\": [\"Kahve\", \"Tatlı\"],\r\n  \"coordinates\": [32.85, 39.93]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://backend-main-one-vert.vercel.app/api/venues",
+					"protocol": "https",
+					"host": [
+						"backend-main-one-vert",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"api",
+						"venues"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT Update Venue",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Updated Postman Cafe\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://backend-main-one-vert.vercel.app/api/venues/693f1c94905cbb3fdb233801",
+					"protocol": "https",
+					"host": [
+						"backend-main-one-vert",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"api",
+						"venues",
+						"693f1c94905cbb3fdb233801"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE Venue",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://backend-main-one-vert.vercel.app/api/venues/693f1c94905cbb3fdb233801\n",
+					"protocol": "https",
+					"host": [
+						"backend-main-one-vert",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"api",
+						"venues",
+						"693f1c94905cbb3fdb233801\n"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
