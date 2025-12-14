@@ -15,3 +15,16 @@ https://backend-main-one-vert.vercel.app
 ## API Endpointleri
 
 ### Tüm Mekanları Getir
+## API Testleri (Postman)
+
+### GET – Tüm Mekanlar
+![GET](screenshots/get.png)
+
+### POST – Mekan Ekleme
+![POST](screenshots/post.png)
+
+### PUT – Mekan Güncelleme
+![PUT](screenshots/put.png)
+
+### DELETE – Mekan Silme
+![DELETE](screenshots/delete.png)
